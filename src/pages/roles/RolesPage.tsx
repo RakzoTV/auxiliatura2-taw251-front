@@ -13,8 +13,8 @@ export default function RolesPage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [editTarget, setEditTarget] = useState<Rol | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<Rol | null>(null);
-  const [saving, setSaving] = useState(false);
-  const [deleting, setDeleting] = useState(false);
+  const [saving, _setSaving] = useState(false);
+  const [deleting, _setDeleting] = useState(false);
 
   useEffect(() => {
     cargarDatos()
